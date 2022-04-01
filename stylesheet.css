@@ -1,0 +1,82 @@
+:root {
+    --columns: 16;
+    --rows: 16;
+}
+.gridRow {
+    border: 1px solid black;
+}
+.body {
+    background-color: gray;
+}
+.form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.header {
+    display: inline-block;
+    text-align: center;
+    font-size: 68px;
+    font-style: oblique;
+    /* grid-area: header; */
+    color: white;
+    font-family: cursive;
+    background-size: cover;
+    max-height: 200px;
+    vertical-align: top;
+    transform: scaleY(0.5);
+        transform-origin: 0 0;
+   
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), auto);
+    grid-template-rows: repeat(var(--rows), auto);
+    gap: .0001em;
+    border-color: black;
+    border-style: solid;
+    width: 800px;
+    height: 800px;
+    /* grid-area: main; */
+    background-color: white;
+    align-self: center;
+}
+.btn0 {
+    display: flexbox;
+    max-height: 200px;
+}
+.btn1 {
+    height: 125px;
+    width: 125px;
+    font-size: larger;
+    /* grid-area: footer; */
+    align-self: flex-start;
+    margin-right: 35%;
+    border-radius: 50%;
+    background-color: white ;
+    margin-right: 400px;
+}
+.btn2 {
+    height: 125px;
+    width: 125px;
+    font-size: larger;
+    /* grid-area: footer; */
+    align-self: flex-end;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.grid-item {
+    background-image: url("/img/v2-tb-hr.png");
+}
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+    background-color: red;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: black;
+    /* line-height: 100px; */
+}
