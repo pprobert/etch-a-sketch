@@ -41,26 +41,26 @@
     align-self: center;
 }
 .btn0 {
-    display: flexbox;
+    display: flex;
+    justify-content: center;
     max-height: 200px;
+    align-content: space-between;
 }
 .btn1 {
     height: 125px;
     width: 125px;
     font-size: larger;
     /* grid-area: footer; */
-    align-self: flex-start;
-    margin-right: 35%;
+    margin-right: 645px;
     border-radius: 50%;
     background-color: white ;
-    margin-right: 400px;
 }
 .btn2 {
     height: 125px;
     width: 125px;
     font-size: larger;
     /* grid-area: footer; */
-    align-self: flex-end;
+  
     border-radius: 50%;
     background-color: white;
 }
